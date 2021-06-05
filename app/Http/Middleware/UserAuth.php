@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Session;
 
 class UserAuth
 {
@@ -16,7 +17,7 @@ class UserAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->path()=="login" && $request->session->has('user')) {
+        if ($request->path()=="login" && Session::has('user')) {
             return redirect('/');   
         }
         return $next($request);

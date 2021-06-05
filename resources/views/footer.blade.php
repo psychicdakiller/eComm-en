@@ -1,9 +1,19 @@
-<div class="card">
+{{-- <div style="clear:both" class="panel panel-default">
+	<div class="panel-body">
+		Panel Content
+	</div>
+	<div class="panel-footer">
+		Panel Footer
+	</div>
+</div> --}}
+
+<div class="card" style="clear:both">
   <div class="card-header">
-    Featured
+    Quote
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <blockquote class="blockquote mb-0">
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
   </div>
 </div>
